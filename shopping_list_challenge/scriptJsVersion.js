@@ -5,10 +5,6 @@ window.addEventListener('click', () => {
     inputNode.focus();
 });
 
-window.addEventListener('click', () => {
-    inputNode.focus();
-});
-
 let newListElement;
 
 function deleteElement(node) {
