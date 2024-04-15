@@ -1,5 +1,6 @@
 const inputEL = document.querySelector("input");
 const uList = document.getElementsByTagName("ol") [0];
+
 window.onblur = inputEL.focus();
 
 const addBtn = document.getElementById("add-btn").addEventListener("click", () => {
@@ -24,4 +25,12 @@ const addBtn = document.getElementById("add-btn").addEventListener("click", () =
     }
 
     console.log(uList.children);
+});
+
+const dialogBox = document.querySelector("dialog");
+const dialogBoxButtons = document.querySelectorAll("dialog button");
+
+const shopBtn = dialogBoxButtons[0].addEventListener('click', () => {
+    console.log("Shop selected");
+    dialogBox.close();
 });

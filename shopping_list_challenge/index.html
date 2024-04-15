@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping List</title>
+    <title>Which List?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <dialog open="true">
+        <p>Change script:</p>
+        <button id="shop">shopping</button>
+        <button id="to-do" style="margin-left: 10px;">to-do list</button>
+    </dialog>
     <h2>My shopping list</h2>
 
     <div>Enter a new element: <input type="text"><button id="add-btn">Add element</button></div>
 
     <ol></ol>
+
+    <button>Choose operation</button>
 
     <script src="scriptTsVersion.js"></script>
 </body>
